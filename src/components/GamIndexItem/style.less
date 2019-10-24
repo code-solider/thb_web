@@ -1,0 +1,268 @@
+.gutter_row{
+    margin-bottom: 10px;
+    &:last-child{
+        flex-direction: row;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        input{
+            &:first-child{
+                margin: 0;
+                border: 1px solid #ccc;
+                padding: 5px;
+                border-radius: 5px;
+                display: grid;
+                width: 155px;
+                margin-right: 15px;
+            }
+            &:last-child{
+                justify-content: center;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                padding: 5px 0;
+                flex: 1;
+            }
+        }
+    }
+    button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px 0;
+    }
+}
+
+.comment{
+    display: none;
+}
+.commentBlock{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    z-index: 99999;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding:10px;
+    textarea{
+        flex: 1;
+        background-color: #fff;
+        border: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        height: 30px;
+        line-height: 30px;
+        color: #333;
+    }
+    i{
+        font-size: 24px;
+        margin: 0 5px;
+    }
+}
+.wrap{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    padding-left: 0;
+    border-bottom: 1px solid #ccc;
+    line-height: 22px;
+    &:last-child{
+        border-bottom: none;
+    }
+    .headerImg{
+        flex: 1;
+        text-align: center;
+        padding-top: 20px;
+        .title{
+            margin-top: 10px;
+        }
+    }
+    .info{
+        flex: 4;
+        .company{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 6px 0;
+            .type{
+                background-color: #108ee9;
+                padding: 0px 10px;
+                font-size: 12px;
+                color: #fff;
+                border-radius: 5px;
+            }
+        }
+        .des{
+            .content{
+                p{margin-bottom: 0;}
+            }
+            .img_wrap{
+                margin-top: 10px;
+            }
+            img{
+                width: 100%;
+                height: 100px;
+                margin-bottom: 3px;
+            }
+        }
+        .footer{
+            .oneLine{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 10px;
+                .d2{
+                    text-align: right;
+                    display: flex;
+                    position: relative;
+                    .icon_wrap{
+                        background-color: #108ee9;
+                        padding: 5px 10px;
+                        border-radius: 5px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        position: absolute;
+                        right: 28px;
+                        top: -3px;
+                        i{
+                            font-size: 20px;
+                            margin-right: 13px;
+                            color: #fff;
+                            &:last-child{
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                    .icon_wrap_none{
+                        display: flex;
+                        widows: 0;
+                        height: 0;
+                        overflow: hidden;
+                    }
+                }
+            }
+            .dianzan{
+                background-color: #f5f5f5;
+                padding: 0 5px;
+                font-size: 12px;
+                border-radius: 2px;
+                align-items: center;
+                display: flex;
+                span{
+                    margin-left: 5px;
+                }
+            }
+            .commentList{
+                background-color: #f5f5f5;
+                padding: 5px 10px;
+                margin-top: 10px;
+                font-size: 12px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+.wrap_second{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    //font-size: 12px;
+    border-bottom: 1px solid #ccc;
+    line-height: 22px;
+    .one_line{
+        display: flex;
+        flex-direction: row;
+        .headerImg{
+            margin-right: 20px;
+            margin-right: 20px;
+            position: relative;
+            i{
+                position: absolute;
+                bottom: 10px;
+            }
+        }
+        .username_conpany{
+            flex: 1;
+        }
+    }
+    .info{
+        flex: 4;
+        .title{
+            //font-size: 16px;
+            font-weight: bold;
+            padding: 3px 0;
+        }
+        .des{
+            .content{
+                p{margin-bottom: 0;}
+            }
+            .img_wrap{
+                margin-top: 10px;
+            }
+            img{
+                width: 100%;
+                min-height: 100px;
+                max-height: 114px;
+                margin-bottom: 3px;
+            }
+        }
+        .footer{
+            .oneLine{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 10px;
+                .d2{
+                    text-align: right;
+                    display: flex;
+                    position: relative;
+                    .icon_wrap{
+                        background-color: #108ee9;
+                        padding: 5px 10px;
+                        border-radius: 5px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        position: absolute;
+                        right: 28px;
+                        top: -3px;
+                        i{
+                            font-size: 20px;
+                            margin-right: 20px;
+                            color: #fff;
+                            &:last-child{
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                    .icon_wrap_none{
+                        display: flex;
+                        widows: 0;
+                        height: 0;
+                        overflow: hidden;
+                    }
+                }
+            }
+            .dianzan{
+                background-color: #f5f5f5;
+                padding: 0 5px;
+                font-size: 12px;
+                border-radius: 2px;
+                align-items: center;
+                display: flex;
+                span{
+                    margin-left: 5px;
+                }
+            }
+            .commentList{
+                background-color: #f5f5f5;
+                padding: 5px 10px;
+                margin-top: 10px;
+                font-size: 12px;
+                line-height: 25px;
+            }
+        }
+    }
+}

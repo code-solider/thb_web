@@ -1,0 +1,29 @@
+.wrap{
+    .d1{
+        display: flex;
+        flex-direction: column;
+        .item{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 20px;
+            &:last-child{
+                margin-top: 10px;
+            }
+            &>div{
+                flex: 1;
+            }
+            .item_1{
+                text-align: right;
+            }
+            .item_2{
+                font-size: 24px;
+                color: red;
+                text-indent: 5px;
+            }
+        }
+        .sign_in{
+            text-align: center;
+        }
+    }
+}

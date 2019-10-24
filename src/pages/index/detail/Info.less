@@ -1,0 +1,46 @@
+.wrap{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    min-height:calc(100vh - 100px);
+    .line_One{
+        display: flex;
+        flex-direction: row;
+        line-height: 26px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        align-items: center;
+        .avatar{
+            display: flex;
+        }
+        .all_name{
+            display: flex;
+            flex-direction: column;
+            flex: 10;
+            margin: 0px 10px;
+            justify-content: center;
+        }
+        .d1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &>.d2{
+        margin-top: 10px;
+        div{
+            line-height: 25px;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 5px;
+            .d1{
+                flex: 2;
+            }
+            .d2{
+                flex: 5;
+            }
+        }
+    }
+}
